@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.bg-dark{
+    background-color: white;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

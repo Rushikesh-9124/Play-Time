@@ -1,0 +1,154 @@
+
+nav{
+    
+    width: 100vw;
+    /* height: 50px; */
+    display: flex;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: #fff;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    max-height: 60px;
+}
+
+.nav-left .menu_icon{
+    width: 22px;
+    margin-right: 25px;
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+.nav-left .logo{
+    z-index: 10;
+    width: 130px;
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.nav-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.nav-middle .search-box input{
+    width: 400px;
+    border:0;
+    outline: none;
+    background:transparent ;
+    color: white;
+}
+
+.nav-middle .search-box img{
+    width: 15px;
+}
+.nav-right button{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right .user-icon{
+    border-radius: 50%;
+}
+
+.nav-middle .search-box input[type="text"]:focus {
+    width: 450px;
+}
+
+@media  (max-width : 900px){
+    .menu-icon{
+        display : none;
+    }
+    .nav-right img{
+        display: none;
+    }
+
+    .logo{
+        width: 90px;
+    }
+    .nav-middle .search-box{
+        margin-left: 10px;
+    }
+    .nav-middle .search-box input[type="text"]{
+        width: 250px;
+    }
+
+    .nav-middle .search-box input[type="text"]:focus{
+        width: 250px;
+    }
+}
+@media  (max-width : 550px){
+    .nav-middle .search-box input[type="text"]{
+        width: 80px;
+    }
+    .nav-middle .search-box input[type="text"]:focus{
+        width: 80px;
+    }
+}
+.link-logo{
+}
+
+.nav-left .link-logo img{
+    height: 50%;
+    transition: none;
+}
+
+.nav-left .link-logo img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.flex-div .nav-left .rotated{
+    transform: rotate(-360deg);
+}
+
+.nav-right button{
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+
+}
+
+
+.flex-div.dark-mode{
+    background-color: white;
+}
+.nav-left.dark-mode{
+    background-color: white;
+}
+
+.nav-left.dark-mode img{
+    filter: none;
+}
+ .logo.dark-mode{
+    filter: brightness(0) grayscale(100) invert(0);
+}
+
+.search-box.dark-mode{
+    background-color: white;
+    border: 1px solid black;
+}
+.search-box.dark-mode img{
+    filter: brightness(0) grayscale(100) invert(0);
+}
+
+.nav-right .flex-div.dark-mode{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.nav-right button{
+    z-index: 5;
+    position: relative;
+    left: -20px;
+}
