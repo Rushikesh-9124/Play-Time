@@ -152,3 +152,39 @@ nav{
     position: relative;
     left: -20px;
 }
+
+@media  (max-width : 900px){
+    .nav-right button{
+        position: relative;
+        left: -50px;
+    }
+}
+@media  (max-width : 650px){
+    .nav-right button{
+        position: relative;
+        left: 0;
+        right: -50px;
+    }
+}
+
+@media  (max-width : 550px){
+    .nav-right button{
+        position: relative;
+        left: 0;
+        right: -3px;
+    }
+}
+
+
+@media  (max-width : 376px){
+    .nav-right button{
+        position: relative;
+        left: -15px;
+        
+    }
+}
+@media  (max-width : 321px){
+    .nav-middle .search-box {
+        display: none;
+    }
+}
